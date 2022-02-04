@@ -1,0 +1,61 @@
+let Scholar_No:number = 06
+let firstName:string = "Shreyas"
+let lastname:string = "Dhoke
+
+let college:string = "MANITBhopal"
+
+
+let l:string | number = 06  //Union
+console.warn(l)
+l = Hello World
+console.warn(l)
+
+//command tsc index.ts --watch
+
+//It consist of multiple types number ,string, boolean like that
+
+//let data :string[] =["Shreyas",'1',"10.2","Manit"]
+data.push(2,"Dhoke")
+
+//Interface
+
+Interface usertyped{
+name:string,
+age:number,
+address: any,
+isMale:boolean}
+
+let users:usertyped = {
+name="shreyas"  
+age=21
+address = "India"
+isMale:true
+}
+console.warn(users)
+
+//------------------------
+
+let users:any = {
+name="shreyas"  
+age=21
+address = "India"
+isMale:true
+}
+console.warn(users)
+
+
+//--function--
+function cals(a:number,b:any):number
+{
+return a+b
+}
+console.warn(cals(100,50))
+
+//
+//--function--
+function cals(a:number,b?:any):number  
+{
+return b?a+b:a+b;
+}
+console.warn(cals(100)) //if second number is missing then we can use questio mark in parameter
+
